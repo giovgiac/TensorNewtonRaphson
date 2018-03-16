@@ -128,6 +128,8 @@ def newton(x_0, p):
                         result[0],
                         result[-1])
 
+        return result
+
 
 def main(unused_argv):
     tf.logging.set_verbosity(3)
