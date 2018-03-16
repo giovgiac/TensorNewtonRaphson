@@ -20,9 +20,9 @@ import tensorflow as tf
 FLAGS = tf.flags.FLAGS
 
 # Newton-Raphson parameters
-tf.flags.DEFINE_string("equation", "tf.pow(x, 2) - tf.exp(x)", "The equation to evaluate the root of.")
 tf.flags.DEFINE_float("initial_guess", 1.0, "The starting guess to plug-in the Newton-Raphson method.")
 tf.flags.DEFINE_float("precision", 1e-12, "The precision to achieve before stopping the method.")
+tf.flags.DEFINE_string("equation", "2 * tf.cos(3 * x) - tf.exp(x)", "The equation to evaluate the root of.")
 
 
 def f(x):
